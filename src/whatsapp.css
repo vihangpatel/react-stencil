@@ -1,0 +1,41 @@
+.whatsapp-card {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  padding: 16px;
+  background: #999;
+  margin: 5px;
+}
+
+.whatsapp-avatar {
+  width: 50px;
+  border-radius: 25px;
+}
+
+.whatsapp-avatar img {
+  width: 100%;
+}
+
+.whatsapp-chat-frame {
+  flex: 1;
+  display: flex;
+  margin: 0 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whatsapp-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.whatsapp-last-chat {
+  font-size: 13px;
+  color: #666;
+  text-align: left;
+}
+
+.whatsapp-right-block {
+  padding: 16px;
+}

@@ -1,0 +1,117 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  color: #666;
+}
+
+.sub-title,
+.status,
+.score {
+  font-size: 14px;
+  color: #666;
+}
+
+.link-text {
+  font-size: 12px;
+  color: blue;
+}
+
+.card {
+  padding: 16px;
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  background: #ccc;
+  margin: 5px;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lower-part {
+  margin-top: 40px;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  background: grey;
+  margin: 10px;
+}
+
+.enable-stensil .stensil {
+  background: #eee;
+  margin: 2px 0;
+  color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.enable-stensil .stensil-ignore {
+  visibility: hidden;
+}
+
+.enable-stensil p.stensil {
+  height: 12px;
+  position: relative;
+}
+
+.enable-stensil .stensil::after {
+  content: "";
+  top: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  color: transparent;
+  transform: translateX(-100%);
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 46%,
+      rgba(255, 255, 255, 0.35) 50%,
+      rgba(255, 255, 255, 0) 54%
+    )
+    50% 50%;
+
+  animation: loading 1.2s infinite linear;
+}
+
+.para {
+  font-size: 12px;
+  color: grey;
+  text-align: left;
+}
+
+@keyframes loading {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
